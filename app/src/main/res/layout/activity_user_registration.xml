@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layoutText">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter User Name"
+            android:textSize="24sp"
+            android:id="@+id/txtRegUserName"
+            android:layout_centerHorizontal="true"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Password"
+            android:textSize="24sp"
+            android:id="@+id/txtRegPass1"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtRegUserName"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Re-Enter Password"
+            android:textSize="24sp"
+            android:id="@+id/txtRegPass2"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtRegPass1"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layoutText"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="register"
+            android:id="@+id/btnRegNewUser"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="cancel"
+            android:id="@+id/btnRegCancel"
+            android:layout_toRightOf="@+id/btnRegNewUser"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
