@@ -56,6 +56,7 @@ import java.util.TimerTask;
 public class MainActivity extends AppCompatActivity implements OnMapReadyCallback, LocationListener, View.OnClickListener, SharedPreferences.OnSharedPreferenceChangeListener { // we implement LocationListener in order to get updates on changing location, provers and such
     static GoogleMap mMap;
 
+//    String apik = BuildConfig.API_KEY;
     LocationPerm locationPerm = LocationPerm.getInstance(); //singleton
     private static final int LOCATION_REQUEST_CODE = 1; // the code to recognize a specific permission request
     Context context;
